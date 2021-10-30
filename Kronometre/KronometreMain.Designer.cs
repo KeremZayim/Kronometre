@@ -224,6 +224,7 @@ namespace Kronometre
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Kronometre";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kronometre by Kerem Zayim";
             this.Load += new System.EventHandler(this.FormKronometre_Load);
             this.pnlTitleBar.ResumeLayout(false);
