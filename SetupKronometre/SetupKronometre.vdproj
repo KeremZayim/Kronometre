@@ -16,12 +16,12 @@
         "Entry"
         {
         "MsmKey" = "8:_146DDD62BA69C4CEC4663D73E60DA926"
-        "OwnerKey" = "8:_82A114A25A72420C8A35ACA2B47BC13A"
+        "OwnerKey" = "8:_CAF8BD9E35F54B70871EE6E1D3A6B05C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_82A114A25A72420C8A35ACA2B47BC13A"
+        "MsmKey" = "8:_CAF8BD9E35F54B70871EE6E1D3A6B05C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -40,7 +40,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_82A114A25A72420C8A35ACA2B47BC13A"
+        "OwnerKey" = "8:_CAF8BD9E35F54B70871EE6E1D3A6B05C"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -225,7 +225,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Setup Kronometre"
         "ProductCode" = "8:{15D3C725-4E5C-46AB-A14F-E3A81D81839E}"
-        "PackageCode" = "8:{BE285CEB-887D-4F64-BE51-EFE69CAE38B1}"
+        "PackageCode" = "8:{BA337F88-BB7F-4D72-91F1-F3FBC8900567}"
         "UpgradeCode" = "8:{F1B63939-5D98-41D9-94F0-3E339641AE7D}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -353,7 +353,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_82A114A25A72420C8A35ACA2B47BC13A"
+            "Target" = "8:_CAF8BD9E35F54B70871EE6E1D3A6B05C"
             "Folder" = "8:_043E74F2768A4754838562CA84B85E41"
             "WorkingFolder" = "8:_FBC93528A12B45C89C2E12A45D07A498"
             "Icon" = "8:_FE5E73A10B8440888273C392C795B629"
@@ -367,7 +367,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_82A114A25A72420C8A35ACA2B47BC13A"
+            "Target" = "8:_CAF8BD9E35F54B70871EE6E1D3A6B05C"
             "Folder" = "8:_56E19FED248D4673BF95C776AD8BDC56"
             "WorkingFolder" = "8:_FBC93528A12B45C89C2E12A45D07A498"
             "Icon" = "8:_FE5E73A10B8440888273C392C795B629"
@@ -772,7 +772,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_82A114A25A72420C8A35ACA2B47BC13A"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_CAF8BD9E35F54B70871EE6E1D3A6B05C"
             {
             "SourcePath" = "8:..\\Kronometre\\obj\\Debug\\Kronometre.exe"
             "TargetName" = "8:"
