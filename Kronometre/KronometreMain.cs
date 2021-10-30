@@ -12,6 +12,7 @@ namespace Kronometre
 {
     public partial class FormKronometre : Form
     {
+        //Kerem Zayim Tarafından Yapılmıştır!
         //Tasima Islemi
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
@@ -31,6 +32,7 @@ namespace Kronometre
             btnBaslatDurdur.Text = "Baslat";
         }
 
+        //Exit Butonu
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -47,18 +49,28 @@ namespace Kronometre
         int salise = 0, saniye = 0, dakika = 0, saat = 0;
         private void timerSaat_Tick(object sender, EventArgs e)
         {
-
+            saat++;
+            lblSaat.Text = Convert.ToString(saat + ":");
+            if (saat == 24)
+            {
+                saat = 0;
+            }
         }
 
         private void timerDakika_Tick(object sender, EventArgs e)
         {
-
+            dakika++;
+            lblDakika.Text = Convert.ToString(dakika);
+            if (dakika == 60)
+            {
+                dakika = 0;
+            }
         }
 
         private void timerSaniye_Tick(object sender, EventArgs e)
         {
             saniye++;
-            lblSaniye.Text = Convert.ToString(saniye);
+            lblSaniye.Text = Convert.ToString(saniye + ":");
             if (saniye == 60)
             {
                 saniye = 0;
@@ -99,10 +111,21 @@ namespace Kronometre
 
         private void btnSifirla_Click(object sender, EventArgs e)
         {
+            btnBaslatDurdur.Text = "Baslat";
+            timerSalise.Enabled = false;
+            timerSaniye.Enabled = false;
+            timerDakika.Enabled = false;
+            timerSaat.Enabled = false;
+
             salise = 0;
             saniye = 0;
             dakika = 0;
             saat = 0;
+
+            lblSalise.Text = "00";
+            lblSaniye.Text = "00:";
+            lblDakika.Text = "00:";
+            lblSaat.Text = "00:";
         }
     }
 }

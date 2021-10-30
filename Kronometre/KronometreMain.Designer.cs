@@ -42,6 +42,8 @@ namespace Kronometre
             this.timerSaat = new System.Windows.Forms.Timer(this.components);
             this.lblSaniye = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblDakika = new System.Windows.Forms.Label();
+            this.lblSaat = new System.Windows.Forms.Label();
             this.pnlTitleBar.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -54,7 +56,7 @@ namespace Kronometre
             this.pnlTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTitleBar.Location = new System.Drawing.Point(0, 0);
             this.pnlTitleBar.Name = "pnlTitleBar";
-            this.pnlTitleBar.Size = new System.Drawing.Size(331, 32);
+            this.pnlTitleBar.Size = new System.Drawing.Size(343, 32);
             this.pnlTitleBar.TabIndex = 0;
             this.pnlTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.TasimaIslemi);
             // 
@@ -78,7 +80,7 @@ namespace Kronometre
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Aquire", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(3)));
             this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
-            this.btnExit.Location = new System.Drawing.Point(299, 0);
+            this.btnExit.Location = new System.Drawing.Point(311, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(32, 32);
             this.btnExit.TabIndex = 0;
@@ -94,9 +96,9 @@ namespace Kronometre
             this.btnBaslatDurdur.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBaslatDurdur.Font = new System.Drawing.Font("Aquire", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBaslatDurdur.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
-            this.btnBaslatDurdur.Location = new System.Drawing.Point(51, 363);
+            this.btnBaslatDurdur.Location = new System.Drawing.Point(24, 316);
             this.btnBaslatDurdur.Name = "btnBaslatDurdur";
-            this.btnBaslatDurdur.Size = new System.Drawing.Size(106, 53);
+            this.btnBaslatDurdur.Size = new System.Drawing.Size(129, 53);
             this.btnBaslatDurdur.TabIndex = 1;
             this.btnBaslatDurdur.Text = "Baslat";
             this.btnBaslatDurdur.UseVisualStyleBackColor = false;
@@ -110,9 +112,9 @@ namespace Kronometre
             this.btnSifirla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSifirla.Font = new System.Drawing.Font("Aquire", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSifirla.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
-            this.btnSifirla.Location = new System.Drawing.Point(172, 363);
+            this.btnSifirla.Location = new System.Drawing.Point(175, 316);
             this.btnSifirla.Name = "btnSifirla";
-            this.btnSifirla.Size = new System.Drawing.Size(106, 53);
+            this.btnSifirla.Size = new System.Drawing.Size(129, 53);
             this.btnSifirla.TabIndex = 2;
             this.btnSifirla.Text = "Sifirla";
             this.btnSifirla.UseVisualStyleBackColor = false;
@@ -123,7 +125,7 @@ namespace Kronometre
             this.lblSalise.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSalise.Font = new System.Drawing.Font("Aquire", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSalise.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
-            this.lblSalise.Location = new System.Drawing.Point(238, 119);
+            this.lblSalise.Location = new System.Drawing.Point(280, 28);
             this.lblSalise.Name = "lblSalise";
             this.lblSalise.Size = new System.Drawing.Size(57, 32);
             this.lblSalise.TabIndex = 3;
@@ -147,6 +149,7 @@ namespace Kronometre
             // 
             // timerSaat
             // 
+            this.timerSaat.Interval = 3600000;
             this.timerSaat.Tick += new System.EventHandler(this.timerSaat_Tick);
             // 
             // lblSaniye
@@ -154,31 +157,64 @@ namespace Kronometre
             this.lblSaniye.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSaniye.AutoSize = true;
             this.lblSaniye.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblSaniye.Font = new System.Drawing.Font("Aquire", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaniye.Font = new System.Drawing.Font("Aquire", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSaniye.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.lblSaniye.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.lblSaniye.Location = new System.Drawing.Point(157, 109);
+            this.lblSaniye.Location = new System.Drawing.Point(181, 4);
             this.lblSaniye.Name = "lblSaniye";
-            this.lblSaniye.Size = new System.Drawing.Size(75, 43);
+            this.lblSaniye.Size = new System.Drawing.Size(110, 56);
             this.lblSaniye.TabIndex = 3;
-            this.lblSaniye.Text = "00";
-            this.lblSaniye.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.lblSaniye.Text = "00:";
+            this.lblSaniye.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.lblSalise);
             this.panel1.Controls.Add(this.lblSaniye);
-            this.panel1.Location = new System.Drawing.Point(24, 106);
+            this.panel1.Controls.Add(this.lblDakika);
+            this.panel1.Controls.Add(this.lblSaat);
+            this.panel1.Location = new System.Drawing.Point(0, 77);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(295, 152);
+            this.panel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.panel1.Size = new System.Drawing.Size(337, 61);
             this.panel1.TabIndex = 4;
+            // 
+            // lblDakika
+            // 
+            this.lblDakika.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblDakika.AutoSize = true;
+            this.lblDakika.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblDakika.Font = new System.Drawing.Font("Aquire", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDakika.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
+            this.lblDakika.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.lblDakika.Location = new System.Drawing.Point(88, 4);
+            this.lblDakika.Name = "lblDakika";
+            this.lblDakika.Size = new System.Drawing.Size(110, 56);
+            this.lblDakika.TabIndex = 3;
+            this.lblDakika.Text = "00:";
+            this.lblDakika.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            // 
+            // lblSaat
+            // 
+            this.lblSaat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSaat.AutoSize = true;
+            this.lblSaat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblSaat.Font = new System.Drawing.Font("Aquire", 42F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSaat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
+            this.lblSaat.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.lblSaat.Location = new System.Drawing.Point(-4, 4);
+            this.lblSaat.Name = "lblSaat";
+            this.lblSaat.Size = new System.Drawing.Size(110, 56);
+            this.lblSaat.TabIndex = 3;
+            this.lblSaat.Text = "00:";
+            this.lblSaat.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
             // FormKronometre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.ClientSize = new System.Drawing.Size(331, 450);
+            this.ClientSize = new System.Drawing.Size(343, 388);
             this.ControlBox = false;
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnSifirla);
@@ -210,6 +246,8 @@ namespace Kronometre
         private System.Windows.Forms.Timer timerSaat;
         private System.Windows.Forms.Label lblSaniye;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lblDakika;
+        private System.Windows.Forms.Label lblSaat;
     }
 }
 
