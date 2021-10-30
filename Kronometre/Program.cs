@@ -16,7 +16,7 @@ namespace Kronometre
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormKronometre());
+            Application.Run(new Kronometre());
         }
     }
 }

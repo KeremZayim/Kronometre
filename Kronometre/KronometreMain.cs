@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Kronometre
 {
-    public partial class FormKronometre : Form
+    public partial class Kronometre : Form
     {
         //Kerem Zayim Tarafından Yapılmıştır!
         //Tasima Islemi
@@ -22,7 +22,7 @@ namespace Kronometre
         [System.Runtime.InteropServices.DllImport("user32.dll")]
         public static extern bool ReleaseCapture();
         //
-        public FormKronometre()
+        public Kronometre()
         {
             InitializeComponent();
         }

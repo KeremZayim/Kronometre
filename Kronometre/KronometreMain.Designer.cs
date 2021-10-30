@@ -1,7 +1,7 @@
 ﻿
 namespace Kronometre
 {
-    partial class FormKronometre
+    partial class Kronometre
     {
         /// <summary>
         ///Gerekli tasarımcı değişkeni.
@@ -30,6 +30,7 @@ namespace Kronometre
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kronometre));
             this.pnlTitleBar = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
@@ -209,7 +210,7 @@ namespace Kronometre
             this.lblSaat.Text = "00:";
             this.lblSaat.TextAlign = System.Drawing.ContentAlignment.BottomRight;
             // 
-            // FormKronometre
+            // Kronometre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -221,8 +222,9 @@ namespace Kronometre
             this.Controls.Add(this.btnBaslatDurdur);
             this.Controls.Add(this.pnlTitleBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormKronometre";
-            this.Text = "Form1";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Kronometre";
+            this.Text = "Kronometre by Kerem Zayim";
             this.Load += new System.EventHandler(this.FormKronometre_Load);
             this.pnlTitleBar.ResumeLayout(false);
             this.pnlTitleBar.PerformLayout();
